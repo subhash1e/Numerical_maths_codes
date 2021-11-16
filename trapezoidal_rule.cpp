@@ -6,11 +6,11 @@ using namespace std;
 
 
 int main(){
-	double lo = 0, hi=pi;
-
-
+	// ans  = integrate func(x) from lo to hi
 	
-	double n=10,h=0.2,ans=0;
+	double lo = 0, hi=pi;
+	
+	double h=0.2,ans=0;//h is X1 - X0,x2-x1,x3-x2 
 
 
 	{
@@ -23,7 +23,9 @@ int main(){
 		ans *= h;
 	}
 
-	cout << fixed << ans << endl; 
+	//fixed is for ans to be in simple digit form , optional
+	cout << fixed << ans ; 
+	//1.997467 [Finished in 1.1s]
 
 	return 0;
 }
